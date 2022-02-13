@@ -19,10 +19,8 @@ public class Pendulum {
     this.y = y_pos + this.radius * cos(this.angle);
     line(x_pos, y_pos, this.x, this.y);
     ellipse(this.x, this.y, mass, mass);
-    
-     this.angular_vel += this.angular_acc;
+    this.angular_vel += this.angular_acc;
     this.angle += this.angular_vel;
-   
   }
 
   public void render() {
@@ -30,7 +28,6 @@ public class Pendulum {
     this.y = this.radius * cos(this.angle);
     line(0, 0, this.x, this.y);
     ellipse(this.x, this.y, mass, mass);
-    
     this.angular_vel += this.angular_acc;
     this.angle += this.angular_vel;
   }
